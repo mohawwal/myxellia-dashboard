@@ -83,8 +83,8 @@ const BudgetModal = ({ open, handleClose, budgetSummary }: BudgetModalProps) => 
   );
 
   const mobileContent = (
-    <div className="bg-[#0C2841] w-full rounded-t-[20px] relative min-h-[400px] -mt-4 pt-4">
-      <div className="h-[180px] w-full rounded-t-[10px] flex items-end justify-center relative">
+    <div className="bg-[#0C2841] w-full rounded-t-[20px] relative min-h-[350px] -mt-4 pt-4">
+      <div className="h-[150px] w-full rounded-t-[10px] flex items-end justify-center relative">
         <Image
           src={overlay}
           alt="Budget overlay"

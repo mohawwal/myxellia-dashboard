@@ -3,6 +3,7 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Slide from '@mui/material/Slide';
+import Typography from '@mui/material/Typography';
 
 interface MobileModalProps {
   open: boolean;
@@ -61,17 +62,43 @@ export default function MobileModal({
           role="dialog"
           tabIndex={-1}
         >
-          <div 
-            style={{
-              width: '40px',
-              height: '4px',
-              backgroundColor: '#E0E0E0',
-              borderRadius: '2px',
-              margin: '12px auto 0',
-              cursor: 'pointer',
-            }}
-            onClick={handleClose}
-          />
+          {/* Header with drag handle and close button */}
+          <div style={{ position: 'relative', paddingTop: '12px' }}>
+            {/* Drag handle */}
+            <div 
+              style={{
+                width: '40px',
+                height: '4px',
+                backgroundColor: '#E0E0E0',
+                borderRadius: '2px',
+                margin: '0 auto',
+                cursor: 'pointer',
+              }}
+              onClick={handleClose}
+            />
+            
+            {/* Close text button */}
+            <Typography
+              variant="body2"
+              onClick={handleClose}
+              sx={{
+                position: 'absolute',
+                top: '8px',
+                right: '16px',
+                cursor: 'pointer',
+                color: '#666',
+                fontWeight: 500,
+                fontSize: '14px',
+                '&:hover': {
+                  color: '#000',
+                },
+                userSelect: 'none',
+              }}
+            >
+              Close
+            </Typography>
+          </div>
+          
           {children}
         </Box>
       </Slide>

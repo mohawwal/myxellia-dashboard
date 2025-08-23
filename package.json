@@ -16,6 +16,7 @@
     "@mui/material-nextjs": "^7.3.0",
     "@mui/x-charts": "^8.10.2",
     "apexcharts": "^5.3.3",
+    "lucide-react": "^0.541.0",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-apexcharts": "^1.7.0",

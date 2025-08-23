@@ -45,8 +45,8 @@ const NavMobile = ({ toggleMenu, menuItems, onMenuItemClick }: NavMobileProps) =
               D
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-semibold">Dylan Frank</span>
-              <span className="text-sm text-gray-400">dylanfrank@example.com</span>
+              <div className="text-lg font-semibold ">Dylan Frank</div>
+              <div className="text-sm text-gray-400">dylanfrank@example.com</div>
             </div>
           </div>
         </div>
