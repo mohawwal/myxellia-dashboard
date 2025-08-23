@@ -1,0 +1,121 @@
+/* app/fonts.css */
+
+/* Light */
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('/fonts/EuclidCircularB/EuclidCircularB-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* CSS Custom Property and Utility Classes */
+:root {
+  --font-euclid: 'EuclidCircularB', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.font-euclid {
+  font-family: var(--font-euclid);
+}
+
+/* Utility classes for different weights */
+.font-euclid-light {
+  font-family: var(--font-euclid);
+  font-weight: 300;
+}
+
+.font-euclid-regular {
+  font-family: var(--font-euclid);
+  font-weight: 400;
+}
+
+.font-euclid-medium {
+  font-family: var(--font-euclid);
+  font-weight: 500;
+}
+
+.font-euclid-semibold {
+  font-family: var(--font-euclid);
+  font-weight: 600;
+}
+
+.font-euclid-bold {
+  font-family: var(--font-euclid);
+  font-weight: 700;
+}
