@@ -63,7 +63,15 @@ export default function MobileModal({
           tabIndex={-1}
         >
           {/* Header with drag handle and close button */}
-          <div style={{ position: 'relative', paddingTop: '12px' }}>
+          <div style={{ 
+            position: 'relative', 
+            paddingTop: '12px', 
+            paddingBottom: '16px',
+            backgroundColor: 'white',
+            borderTopLeftRadius: '20px',
+            borderTopRightRadius: '20px',
+            zIndex: 10
+          }}>
             {/* Drag handle */}
             <div 
               style={{
@@ -83,7 +91,7 @@ export default function MobileModal({
               onClick={handleClose}
               sx={{
                 position: 'absolute',
-                top: '8px',
+                top: '12px',
                 right: '16px',
                 cursor: 'pointer',
                 color: '#666',
@@ -93,6 +101,7 @@ export default function MobileModal({
                   color: '#000',
                 },
                 userSelect: 'none',
+                zIndex: 20,
               }}
             >
               Close
