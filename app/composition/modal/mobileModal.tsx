@@ -3,7 +3,6 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Slide from '@mui/material/Slide';
-import Typography from '@mui/material/Typography';
 
 interface MobileModalProps {
   open: boolean;
@@ -14,7 +13,7 @@ interface MobileModalProps {
 }
 
 const mobileStyle = {
-  position: 'fixed',
+  position: 'absolute',
   bottom: 0,
   left: 0,
   right: 0,
@@ -62,52 +61,32 @@ export default function MobileModal({
           role="dialog"
           tabIndex={-1}
         >
-          {/* Header with drag handle and close button */}
-          <div style={{ 
-            position: 'relative', 
-            paddingTop: '12px', 
-            paddingBottom: '16px',
-            backgroundColor: 'white',
-            borderTopLeftRadius: '20px',
-            borderTopRightRadius: '20px',
-            zIndex: 10
-          }}>
-            {/* Drag handle */}
-            <div 
-              style={{
-                width: '40px',
-                height: '4px',
-                backgroundColor: '#E0E0E0',
-                borderRadius: '2px',
-                margin: '0 auto',
-                cursor: 'pointer',
-              }}
-              onClick={handleClose}
-            />
-            
-            {/* Close text button */}
-            <Typography
-              variant="body2"
-              onClick={handleClose}
-              sx={{
-                position: 'absolute',
-                top: '12px',
-                right: '16px',
-                cursor: 'pointer',
-                color: '#666',
-                fontWeight: 500,
-                fontSize: '14px',
-                '&:hover': {
-                  color: '#000',
-                },
-                userSelect: 'none',
-                zIndex: 20,
-              }}
-            >
-              Close
-            </Typography>
+          <div 
+            style={{
+              width: '40px',
+              height: '4px',
+              backgroundColor: '#E0E0E0',
+              borderRadius: '2px',
+              margin: '12px auto 0',
+              cursor: 'pointer',
+            }}
+            onClick={handleClose}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              top: '16px',
+              right: '16px',
+              fontSize: '16px',
+              cursor: 'pointer',
+              fontWeight: 500,
+              zIndex: 1,
+            }}
+            className='underline cursor-pointer font-bold text-white'
+            onClick={handleClose}
+          >
+            Close
           </div>
-          
           {children}
         </Box>
       </Slide>
