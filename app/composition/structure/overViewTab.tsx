@@ -21,7 +21,7 @@ const OverviewTab = ({ mainIcon, name, sections }: OverviewTabProps) => {
             <Image src={gt} alt={"gt"} />
           </div>
         </div>
-        <div className="border-t border-t-[#E4E4E4] bg-white flex items-start justify-between py-4 px-8 h-full">
+        <div className="border-t border-t-[#E4E4E4] rounded-b-[15px] bg-white flex items-start justify-between py-4 px-8 h-full">
           {sections.map((section, index) => (
             <div key={index} className="flex flex-col items-start justify-start gap-5 pt-4">
               <p className="text-[#525252] text-[14px] leading-[20%]">{section.label}</p>
