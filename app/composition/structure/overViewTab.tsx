@@ -11,7 +11,7 @@ interface OverviewTabProps {
 const OverviewTab = ({ mainIcon, name, sections }: OverviewTabProps) => {
   return (
     <div>
-        <div className="h-[50px] flex items-center justify-between bg-[#F5F5F5] px-3 rounded-t-[16px]">
+        <div className="h-[50px] flex items-center justify-between bg-[#F9FAFB] px-3 rounded-t-[16px]">
           <div className="text-[14px] font-medium leading-[100%] flex items-center justify-start gap-2.5">
             <Image src={mainIcon} alt="House Icon" width={22} />
             <p>{name}</p>
