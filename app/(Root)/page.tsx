@@ -66,13 +66,14 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full py-5 mx-auto px-4 sm:px-6 lg:px-8 max-w-[1370px] relative">
+    <div className="w-full py-5 mx-auto relative px-4 sm:px-6 lg:px-18 max-w-[2000px]">
       <div className="text-[20px] text-[#191919] font-semibold leading-[100%]">
         Welcome, Ahmed
       </div>
 
-      <div className="flex flex-col xl:flex-row items-start gap-[20px] py-5">
-        <div className="w-full xl:w-[870px] h-auto xl:h-[345px] rounded-[16px] border border-[#E4E4E4] bg-white">
+      <div className="flex flex-col xl:flex-row items-start gap-[20px] w-full py-5">
+        <div className="w-full h-auto xl:h-[345px] rounded-[16px] border border-[#E4E4E4] bg-white">
+          
           <div className="flex flex-col sm:flex-row items-start justify-between p-5 gap-4 sm:gap-0">
             <div className="flex items-start justify-between flex-col gap-3.5">
               <h2 className="text-[#191919] font-semibold leading-[100%] text-[18px] sm:text-[20px]">
@@ -105,6 +106,7 @@ const Home = () => {
           </div>
 
           <div className="w-full h-[1px] bg-[#E4E4E4]" />
+
           <div className="px-4">
             <div className="w-full h-auto xl:h-[200px] flex flex-col xl:flex-row items-start justify-center gap-4 xl:gap-2">
               <div className="w-full xl:w-[50%] flex items-center justify-center min-h-[200px]">
@@ -132,7 +134,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full xl:w-[430px] flex flex-col sm:flex-row xl:flex-col gap-5">
+        <div className="w-full xl:w-[600px] flex flex-col sm:flex-row xl:flex-col gap-5">
           <div className="border border-[#E4E4E4] h-auto sm:h-[160px] xl:h-[160px] w-full flex-1 rounded-[16px]">
             <OverviewTab
               mainIcon={houseIcon}

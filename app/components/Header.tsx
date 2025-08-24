@@ -29,8 +29,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-white h-[67px] w-full text-[14px] hidden xl:block border-b border-b-[#E4E4E4]">
-        <div className="max-w-[1370px] h-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="bg-white h-[67px] w-full text-[14px] hidden xl:block border-b border-b-[#E4E4E4] px-4 sm:px-6 lg:px-18">
+        <div className="h-full mx-auto flex items-center justify-between">
           <div className="flex items-center md:space-x-4 space-x-1">
             {menuItems.map((item, index) => (
               <Link href={item.path} key={index}>

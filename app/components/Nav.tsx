@@ -84,7 +84,7 @@ export default function Header() {
   return (
     <>
       <div className="md:h-[82px] h-[70px] bg-black text-white w-full flex items-center relative">
-        <div className="max-w-[1370px] w-full flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-18">
           <div className="flex items-center flex-row space-x-2">
             <div className="hidden sm:block">
               <Image src={logoBig} alt="logo" height={26} priority />
