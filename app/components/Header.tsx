@@ -28,8 +28,8 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <>
-      <div className="bg-white h-[67px] w-full text-[14px] hidden xl:block border-b border-b-[#E4E4E4] px-4 sm:px-6 lg:px-18">
+    <div className="px-4 sm:px-6 lg:px-18 bg-white border-b border-b-[#E4E4E4]">
+      <div className="h-[67px] w-full text-[14px] hidden xl:block">
         <div className="h-full mx-auto flex items-center justify-between">
           <div className="flex items-center md:space-x-4 space-x-1">
             {menuItems.map((item, index) => (
@@ -65,9 +65,9 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="bg-white h-[67px] w-full text-[14px] hidden md:block xl:hidden">
-        <div className="max-w-[1200px] h-full mx-auto px-4 sm:px-4 lg:px-6 flex items-center justify-between">
-          <div className="flex items-center space-x-1">
+      <div className="h-[67px] w-full text-[14px] hidden md:block xl:hidden">
+        <div className="h-full mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-2">
             {menuItems.map((item, index) => (
               <Link href={item.path} key={index}>
                 <div
@@ -127,7 +127,7 @@ const Header = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
