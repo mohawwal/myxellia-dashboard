@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import logoBig from "../../public/logoBig.svg";
+// import logo from "../../public/logo.svg";
 import bell from "../../public/bell.svg";
 import budget from "../../public/budgeting.svg";
 import calender from "../../public/calender.svg";
