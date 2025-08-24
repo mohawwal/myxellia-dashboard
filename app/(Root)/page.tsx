@@ -162,7 +162,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="fixed bottom-[8%] right-[20px] sm:right-[55px] z-50">
+      <div className="fixed bottom-[15%] right-[20px] sm:right-[55px] z-50">
         <div className="sm:w-[57.6px] sm:h-[57.6px] w-[40px] h-[40px] rounded-full bg-[#242526] flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-200 cursor-pointer">
           <Image src={msg} alt="msg" className="sm:w-[24px] sm:h-[24px] w-[19px] h-[19px]" />
         </div>
