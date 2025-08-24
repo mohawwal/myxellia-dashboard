@@ -117,7 +117,7 @@ const Calender = ({onClose}: CalenderProps) => {
   const selectedDay = currentDate.getDate();
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col min-h-0">
       <div className="h-[50px] w-full bg-[#171717] flex items-center justify-between px-4 flex-shrink-0">
         <div className="flex items-center justify-start text-white gap-3">
             <button onClick={onClose}>
@@ -131,7 +131,7 @@ const Calender = ({onClose}: CalenderProps) => {
         </button>
       </div>
 
-      <div className="bg-[#0D0D0D] text-white p-5 flex-1 overflow-y-auto">
+      <div className="bg-[#0D0D0D] text-white p-5 flex-1 min-h-0 overflow-y-auto">
         <div className="flex items-center justify-between mx-auto mb-5 w-[227px]">
           <button onClick={() => navigateMonth(-1)}>
             <Image src={next} alt="next" className="w-[7.64px] h-[14px]" />
@@ -176,7 +176,7 @@ const Calender = ({onClose}: CalenderProps) => {
                 <div
                   key={index}
                   className={`
-                    relative flex items-start justify-start cursor-pointer text-[9px] transition-all duration-200 ease-in-out h-[88px]
+                    relative flex items-start justify-start cursor-pointer text-[9px] transition-all duration-200 ease-in-out h-[60px] sm:h-[88px]
                     ${dayObj.isCurrentMonth ? "text-[#969696]" : "text-[#BBBBBB99]"}
                     ${!isLastInRow ? 'border-r border-[#242424]' : ''}
                     ${!isLastRow ? 'border-b border-[#242424]' : ''}
