@@ -10,6 +10,7 @@ import OverviewTab from "../composition/structure/overViewTab";
 import FlowTabSection from "../composition/structure/flowTabSection";
 import secImg from "../../public/images/sectionImage.jpg";
 import GridItem from "../composition/structure/gridItem";
+import msg from "../../public/msg.svg";
 
 const Home = () => {
   const [activeItem, setActiveItem] = useState(2);
@@ -65,7 +66,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full py-5 mx-auto px-4 sm:px-6 lg:px-8 max-w-[1370px]">
+    <div className="w-full py-5 mx-auto px-4 sm:px-6 lg:px-8 max-w-[1370px] relative">
       <div className="text-[20px] text-[#191919] font-semibold leading-[100%]">
         Welcome, Ahmed
       </div>
@@ -159,6 +160,12 @@ const Home = () => {
             onDotClick={(itemIndex) => handleDotClick(gridIndex, itemIndex)}
           />
         ))}
+      </div>
+
+      <div className="fixed bottom-[30%] right-[20px] sm:right-[55px] z-50">
+        <div className="sm:w-[57.6px] sm:h-[57.6px] w-[40px] h-[40px] rounded-full bg-[#242526] flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-200 cursor-pointer">
+          <Image src={msg} alt="msg" className="sm:w-[24px] sm:h-[24px] w-[19px] h-[19px]" />
+        </div>
       </div>
     </div>
   );
